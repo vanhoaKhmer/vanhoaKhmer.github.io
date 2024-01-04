@@ -1,0 +1,99 @@
+.slider_container{
+    width: 95%;
+    height: 344px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+}
+/*image*/
+.list{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+}
+
+.list div{
+    display: none;
+    transition: 1s;
+    width: 100%
+}
+
+.list .active_img{
+    display: flex;
+    justify-content: center;
+}
+
+.list img{
+    width: 100%;
+    max-width: 1562px;
+    height: 400px;
+    border-radius: 15px;
+    border: solid 3px black;
+}
+
+/*button*/
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+}
+.button{
+    position: absolute;
+    top: 45%;
+    font-size: 40px;
+    width: 100%;
+    max-width: 1562px;
+}
+#next{
+    color: beige;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bolder;
+}
+
+#previous{
+    color: beige;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bolder;
+}
+
+/*dots*/
+
+.dots{
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
+    left: 0px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.dots .active_dot{
+    width: 30px;
+}

@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #F7EBD3;
+}
+
+
+
+
+
+/* Android Large - 2 */
+.frame{
+    position: relative;
+    width: 360px;
+    height: 800px;
+    background: #F7EBD3;
+}
+
+/* Rectangle 2 */
+.submit_button{
+    position: absolute;
+    width: 81px;
+    height: 27px;
+    left: 7px;
+    top: 15px;
+    background: #08F64B;
+    border-radius: 25px;
+
+    /*text */
+    left: calc(50% - 84px/2 - 112px);
+    top: calc(50% - 23px/2 - 355.5px);
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    cursor: pointer;
+    color: #462323;
+
+}
+
+/* Quay Lại 
+
+position: absolute;
+width: 84px;
+height: 23px;
+*/
+
+
+/* 1 1 */
+.image{
+    position: absolute;
+    width: 281px;
+    height: 230px;
+    left: 39px;
+    top: 170px;
+    background: url(https://github.com/viaasana/tu_luyen_chu_viet_tieng_khmer_nam_bo/blob/main/image/phu_am/1.png?raw=true);
+    border-radius: 31px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* question content */
+.quetionContent{
+    position: absolute;
+    width: 275px;
+    height: 19px;
+    left: 21px;
+    top: 111px;
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+}
+
+
+
+/* Ellipse 1 */
+.answer{
+    position: absolute;
+    border-radius: 20px;
+    width: 67px;
+    height: 67px;
+    left: 28px;
+    top: 573px;
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    content: '';
+    text-align: center;
+    cursor: pointer;
+    line-height: 67px;
+    
+}
+
+#A{
+    border: #00F0FF solid 3px;
+}
+
+/* Ellipse 7 */
+#B{
+    /* Ellipse 7 */
+
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 107px;
+    top: 573px;
+    border: #01b3db solid 3px;
+}
+
+
+
+/* Ellipse 5 */
+
+#C{
+    /* Ellipse 5 */
+
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 186px;
+    top: 573px;
+
+    border: #00ff26 solid 3px;
+
+}
+
+
+
+/* Ellipse 6 */
+
+#D{
+/* Ellipse 6 */
+
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 265px;
+    top: 573px;
+    border: #9dff00 solid 3px;
+}
+
+
+
+/* 1/20 */
+.questionIndex{
+    position: absolute;
+    width: 91px;
+    height: 24px;
+    left: 286px;
+    top: 34px;
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+
+}
+
+
+/* icon-1691327_960_720 1 */
+.speakerIcon{
+    position: absolute;
+    width: 48px;
+    height: 45px;
+    left: 16px;
+    top: 464px;
+    cursor: pointer;
+    background: url(https://github.com/viaasana/tu_luyen_chu_viet_tieng_khmer_nam_bo/blob/main/image/icon-1691327_960_720.png?raw=true);
+    background-size: cover;
+}
+
+
+/* Rectangle 4 */
+.back_question{
+    position: absolute;
+    width: 83.5px;
+    height: 21px;
+    left: 2px;
+    top: 693px;
+    color: firebrick;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px #000000 solid;
+}
+
+.next_question{
+    position: absolute;
+    width: 83.5px;
+    height: 21px;
+    left: 270px;
+    top: 693px;
+    color: firebrick;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px #000000 solid;
+}
+

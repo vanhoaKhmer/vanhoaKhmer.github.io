@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm</title>
+    <link rel="stylesheet" href="./tracNghiem.css">
+    <link rel="stylesheet" href="./showResult.css">
+    <link rel="Website Icon" type="png" href="https://raw.githubusercontent.com/viaasana/tu_luyen_chu_viet_tieng_khmer_nam_bo/main/image/icon_png.png">
+</head>
+<body>
+    <div class="frame">
+        <button class="submit_button" onclick=submit()>Nộp bài</button>
+        <b class="questionIndex">1/20</b>
+        <div class="quetionContent"><b> Đây là chữ gì </b>(bấm vào loa để nghe)</div>
+        <div class="image" id="image"></div>
+        <button class="speakerIcon" onclick=startSound()></button>
+        <div class="answer" id="A" onclick="selected('A')">A</div>
+        <div class="answer" id="B" onclick="selected('B')">B</div>
+        <div class="answer" id="C" onclick="selected('C')">C</div>
+        <div class="answer" id="D" onclick="selected('D')">D</div>
+        <button class="back_question" onclick=changQuestion(-1)><b>câu trước</b> </button>
+        <button class="next_question" onclick=changQuestion(+1)><b>câu sau</b></button>
+    </div>
+    <div class="result">
+        <b class="resultHeader">Kết Quả</b>
+        <p class="socaudung">Số câu đúng</p><b class="userResul">1</b>
+        <p class="tongsocau">Tổng số câu</p><b class="maxQuestion">20</b>
+        <button class="remake" onclick="remake()">Làm lại</button>
+        <button class="backHome" onclick="backHome()">Trang chủ</button>
+    </div>
+
+</body>
+<script src="./tracNghiem.js"></script>
+</html>

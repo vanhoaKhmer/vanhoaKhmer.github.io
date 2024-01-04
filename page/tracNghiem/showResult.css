@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+}
+
+
+
+.result{
+    /* Rectangle 5 */
+    display: none;
+    position: relative;
+    width: 329px;
+    height: 205px;
+    background: #ffffff;
+    border-radius: 21px;
+    margin-top: 3rem;
+}
+
+.resultHeader{
+    /* Kết Quả */
+
+position: absolute;
+width: 89px;
+height: 28px;
+left: 118px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 28px;
+/* identical to box height */
+
+color: #D75050;
+
+
+}
+.socaudung{
+    /* Số câu đúng: */
+
+position: absolute;
+width: 75px;
+height: 15px;
+left: 24px;
+top: 63px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+.userResul{
+    /* 1 */
+
+position: absolute;
+width: 6px;
+height: 15px;
+left: 118px;
+top: 63px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+.tongsocau{
+    /* Tổng số câu: */
+
+position: absolute;
+width: 73px;
+height: 15px;
+left: 192px;
+top: 63px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+.maxQuestion{
+    /* 20 */
+
+position: absolute;
+width: 15px;
+height: 15px;
+left: 279px;
+top: 63px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+
+.remake{
+    /* Rectangle 6 */
+
+position: absolute;
+width: 70px;
+height: 18px;
+left: 36px;
+top: 161px;
+color: beige;
+background: #5D5948;
+border-radius: 16px;
+text-align: center;
+cursor: pointer;
+}
+.backHome{
+
+position: absolute;
+width: 70px;
+height: 18px;
+left: 226px;
+top: 161px;
+color: beige;
+background: #2E4E7E;
+border-radius: 16px;
+text-align: center;
+cursor: pointer;
+}
