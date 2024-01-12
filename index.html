@@ -1,79 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tìm hiểu văn hóa Khmer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HỆ THỐNG TỰ LUYỆN CHỮ VIẾT TIẾNG KHMER</title>
+    <link rel="stylesheet" href="./home_css.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+    <link rel="Website Icon" type="png" href="https://raw.githubusercontent.com/viaasana/tu_luyen_chu_viet_tieng_khmer_nam_bo/main/image/icon_png.png">
 </head>
-<body>
-    <header>
-        <div class="search-container">
-            <form role="search" id="form">
-                <input type="search" id="query" name="q" placeholder="search..">
-            </form>
-        </div>
-        <section class="slider_container">
-            <!--image-->
-            <div class="list">
-                <div id="slider_1" class="active_img image">
-                    <img src="./data/image/home/slider_1.png">
-                </div>
-                <div id="slider_2" class="image">
-                    <img src="./data/image/home/slider_2.png">
-                </div>
-                <div id="slider_3" class="image">
-                    <img src="./data/image/home/slider_3.png">
-                </div>
-            </div>
-            <!--button-->
-            <div class="button_container">
-                <div class="button">
-                    <div id="next">></div>
-                    <div id="previous"><</div>
-                </div>
-            </div>
-            <!--dots-->
-            <ul class="dots">
-                <li class="active_dot"></li>
-                <li></li>
-                <li></li>
-            </ul>
+<body id="body">
+  <header id="header">
+    <h1>HỆ THỐNG TỰ LUYỆN CHỮ VIẾT TIẾNG KHMER NAM BỘ</h1><div>Hướng dẫn học viết chữ Khmer cơ bản</div>
+  </header>
+  <div class="toggel_btn" onclick="ativeDropDownMenu()" id="toggel_btn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <nav>
+      <ul>
+        <li>
+          <a href="#">Trang chủ</a>
+        </li>
+        <li>
+          <a href="./page/phu_am/phu_am.html" >Phụ âm</a>
+        </li>
+        <li>
+           <a href="./page/nguyen_am/nguyen_am.html" >Nguyên âm</a>
+        </li>
+        <li>
+          <a href="./page/nguyen_am_doc_lap/nguyen_am_dl.html">Nguyên âm độc lập</a>
+        </li>
+        <li>
+          <a href="./page/consonant_vowel/consonant_vowel.html">Phụ âm chồng vần</a>
+        </li>
+        <li>
+          <a href="./page/number/number.html">Chữ số</a>
+        </li>
+        <li>
+          <a href="./page/consonant_/consonant_.html">Phụ âm gửi chân</a>
+        </li>
+        <li>
+          <a href="./page/download/download.html">Tải xuống</a>
+        </li>
+      </ul>
+    </nav>
     
-        </section>
-    </header>
-
-    <main>
+    <div class="home">
         
-
-        <section class="cardSection">
-            <div class="card" onclick="openWriting()">
-                <div>
-                    <img src="./data/image/home/video.svg" alt="">
-                    <h2>Video hướng dẫn viết chữ Khmer</h2>
-                </div>
-                <br>
-                <p>Sử dụng video để hướng dẫn viết chữ tiếng Khmer, gồm nguyên âm phụ âm ....</p>
-            </div>
-            <div class="card" onclick="openExercises()">
-                <div>
-                    <img src="./data/image/home/check_note.svg" alt="">
-                    <h2>Làm bài tập trắc nghiệm</h2>
-                </div>
-                <br>
-                <p>Bộ bài tập gồm 20 câu trắc nghiệm được tạo ngẫu nhiên giúp tăng khả năng nhận diện các chữ trong tiếng Khmer</p>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="./data/image/home/documenty.svg" alt="">
-                    <h2>Tìm hiểu văn hóa Khmer</h2>
-                </div>
-                <br>
-                <p>Tìm hiểu và tra cứu các văn hóa lễ hội đặc sắc của đồng bào dân tộc Khmer</p>
-            </div>
-
-        </section>
-    </main>
+        <div class="home-" id="consonants" style="--clr:#1e9bff;" onclick="open_consonant()"><h3>Phụ âm</h3></div>
+        <div class="home-" id="vowel" style="--clr:#ff1867;"  onclick="open_vowel()"><h3>Nguyên âm</h3></div>
+        <div class="home-" id="vowel_idp" style="--clr:#f908b1;"  onclick="open_vowel_idp()"><h3>Nguyên âm độc lập</h3></div>
+        <div class="home-" id="number" style="--clr:#08aaaa;"  onclick="open_number()"><h3>Chữ số</h3></div>
+        <div class="home-" id="consonant_vowel" style="--clr:#08ac89;"  onclick="open_consonant_vowel()"><h3>Phụ Âm Chồng Vần</h3></div>
+        <div class="home-" id="consonant_" style="--clr:#067f39;"  onclick="open_consonant_()"><h3>Phụ Âm Gửi Chân</h3></div>
+        
+    </div>
+    </div>
+    <div class="dropDown" id="dropDown">
+      <ul class="linkDropDown">
+        <li>
+          <a href="#">Trang chủ</a>
+        </li>
+        <li>
+          <a href="./page/phu_am/phu_am.html" >Phụ âm</a>
+        </li>
+        <li>
+           <a href="./page/nguyen_am/nguyen_am.html" >Nguyên âm</a>
+        </li>
+        <li>
+          <a href="./page/nguyen_am_doc_lap/nguyen_am_dl.html">Nguyên âm độc lập</a>
+        </li>
+        <li>
+          <a href="./page/consonant_vowel/consonant_vowel.html">Phụ âm chồng vần</a>
+        </li>
+        <li>
+          <a href="./page/number/number.html">Chữ số</a>
+        </li>
+        <li>
+          <a href="./page/consonant_/consonant_.html">Phụ âm gửi chân</a>
+        </li>
+        <li>
+          <a href="./page/download/download.html">Tải xuống</a>
+        </li>
+        <li class="dropdown_TracNghiem">
+          <a href="./page/tracNghiem/tracNghiem.html">Làm trắc nghiệm</a>
+        </li>
+    </ul>
+    </div>
+    <button class="openPractical" onclick="openPractical()">Làm trắc nghiệm</button>
 </body>
-<script src="slider.js"></script>
-<script src="script.js"></script>
+<script src="./home_scrip.js"></script>
+<script src="./dropDown_Scrip.js"></script>
 </html>
