@@ -1,8 +1,7 @@
 var section = document.getElementById("consonant_box")
 
 const vowel = ["ក្ង","ខ្ញ","ឆ្ន","ឈ្ន","ឆ្ម","ឃ្ម","ខ្យ","ព្យ"]
-const WORDS = [["កា", "កី"],
-             ["ខា", "​ខួ"]];
+const WORDS = [];
 
 
 function createCard(letters){
@@ -50,7 +49,7 @@ function Learn(letter){
     speakerButton.onclick = function(){playSound(letter)}
     var words = document.getElementsByClassName("words")[0] ||document.createElement("h3");
     words.className = "words";
-    var string = `<i>${WORDS[letter]}</i>`;
+    var string = `<i>${WORDS[letter] || ""}</i>`;
     words.innerHTML = string;
     var video =  document.getElementsByClassName("video")[0] ||document.createElement("video");
     video.className = "video";
